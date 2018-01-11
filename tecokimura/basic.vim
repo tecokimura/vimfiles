@@ -45,9 +45,11 @@ set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 syntax on " シンタックスON
 set number " 行数表示
 set incsearch  " インクリメンタルサーチ
+set smartcase " 小文字なら区別しないが大文字なら区別する
 set ignorecase " 大文字小文字を区別しない
 set backspace=indent,eol,start " BSの動作設定
 
+set ambiwidth=double " 日本語を２文字で表示
 
 "======
 " status line"
@@ -83,4 +85,12 @@ set wildmenu wildmode=list:full
 
 
 " ctrl-e end insert
+
+set backupdir=~/vimfiles/tmp/
+set directory=~/vimfiles/tmp/
+set undodir=~/vimfiles/tmp/
+
+set viminfo+=n~/vimfiles/tmp/viminfo
+
+
 
