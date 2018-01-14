@@ -13,20 +13,21 @@
 "=========
 
 
-nnoremap <C-h> <Home>
-nnoremap <C-l> <End>
+" 補完とぶつかるのでコメントアウト
+" nnoremap <C-h> <Home>
+" nnoremap <C-l> <End>
+" inoremap <C-p> <Up>
+" inoremap <C-n> <Down>
+" inoremap <C-e> <End>
 
 " 
-inoremap <C-p> <Up>
-inoremap <C-n> <Down>
-inoremap <C-b> <Left>
-inoremap <C-f> <Right>
-inoremap <C-n> <Down>
-inoremap <C-e> <End>
-inoremap <C-h> <BS>
-inoremap <C-d> <Del>
-inoremap <C-Up> <PageUp>
-inoremap <C-Down> <Page>
+" inoremap <C-b> <Left>
+" inoremap <C-f> <Right>
+" inoremap <C-n> <Down>
+" inoremap <C-h> <BS>
+" inoremap <C-d> <Del>
+" inoremap <C-Up> <PageUp>
+" inoremap <C-Down> <Page>
 
 
 " 履歴
