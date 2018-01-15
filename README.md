@@ -21,22 +21,26 @@ ihttps://github.com/tecokimura/vimfiles/archive/master.zip
 
 ### vimrc(Windows10)
 windows+x > Windows PowerShell（管理者）
-$ cmd /c "mklink _vimrc .\vimfiles\_vimrc"
+$ cmd /c "mklink _vimrc C:\Users\kimura\Documents\project\tecokimura\vimfiles\_vimrc"
+$ cmd /c "mklink /D vimfiles C:\Users\kimura\Documents\project\tecokimura\vimfiles"
+
+### for OS X or Linux
+ln -s .vim C:\Users\kimura\Dropbox\tecokimura\Applications\vim
+
+
 
 ### [Vaffle](https://github.com/cocopon/vaffle.vim)
 1. git clone or downloadZip
 2. copy vaffle.vim vimfiles\tecokimura\plugins\
 
+#### TODO:
+- add colorscheme iceberg
+- add colorscheme tecoace
+- vim ~ files path
+merge dropbox
 
 
 
 
 
-### for windows
-mklink C:\Users\{NAME}\_vimrc vimfles\_vimrc
-mklink -D C:\Users\{NAME}\vimfiles C:\Users\kimura\vimfiles
 
-cp C:\Users\kimura\Dropbox\tecokimura\Applications\vim\tecokimura ./vimfiles/
-
-
-ln -s .vim C:\Users\kimura\Dropbox\tecokimura\Applications\vim
