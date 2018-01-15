@@ -16,10 +16,10 @@
 
 ### my vim
 - git clone か zipでダウンロードする
-- ihttps://github.com/tecokimura/vimfiles/archive/master.zip
+- https://github.com/tecokimura/vimfiles/archive/master.zip
 
 
-### vimrc(Windows10)
+### Windows10
 
 windows+x > Windows PowerShell（管理者）
 
@@ -29,10 +29,9 @@ $ cmd /c "mklink /D vimfiles C:\Users\kimura\Documents\project\tecokimura\vimfil
 
 
 ### for OS X or Linux
-ln -s .vim ~\tecokimura\Applications\vim
-ln -s .vimrc ~\tecokimura\Applications\vim/rc
-ln -s .gvimrc ~\tecokimura\Applications\vim
-
+ln -s ~/vimfiles/_gvimrc ~/.gvimrc
+ln -s ~/vimfiles/_vimrc ~/.vimrc
+ln -s ~/vimfiles ~/.vim
 
 ### [Vaffle](https://github.com/cocopon/vaffle.vim)
 1. git clone or downloadZip
