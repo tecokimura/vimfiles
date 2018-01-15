@@ -13,7 +13,16 @@
 "=========
 set runtimepath+=~/.vim/
 set runtimepath+=~/vimfiles/
-runtime! tecokimura/*.vim
-" runtime! tecokimura/colors/*.vim
+
+" Defaultのvimで使用できる基本的な設定
+runtime! tecokimura/basic.vim
+
+" プラグインの読み込み
 runtime! tecokimura/plugins/*.vim
+
+" プラグイン等の設定
+runtime! tecokimura/config.vim
+
+" パソコン毎の設定
+runtime! tecokimura/justhere.vim
 
