@@ -1,6 +1,6 @@
 set ambiwidth=double " 日本語を2文字で表示
 
 " windows
-set guifont=Consolas:h11
+set guifont=Consolas:h18
 
 colorscheme draculace
