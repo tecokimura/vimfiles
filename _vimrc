@@ -11,8 +11,8 @@
 "        \__\/    \  \::/       \  \::/       \  \::/       \  \:\         \__\/      \  \:\        \  \::/       \  \:\        \  \:\    
 "                  \__\/         \__\/         \__\/         \__\/                     \__\/         \__\/         \__\/         \__\/    
 "=========
-set runtimepath+=~/.vim/
-set runtimepath+=~/vimfiles/
+set runtimepath+=~/.vim
+set runtimepath+=~/vimfiles
 
 " Defaultのvimで使用できる基本的な設定
 runtime! tecokimura/basic.vim

@@ -1,4 +1,5 @@
 " Draculace Theme v1.2.7
+" Colorpallet : https://www.google.co.jp/search?q=%238be9fd&oq=%238be9fd&aqs=chrome..69i57.344j0j9&sourceid=chrome&ie=UTF-8
 "
 " https://github.com/zenorocha/dracula-theme
 "
@@ -21,20 +22,23 @@ if exists("syntax_on")
   let g:colors_name = "draculace"
 
   hi Cursor ctermfg=17 ctermbg=231 cterm=NONE guifg=#282a36 guibg=#f8f8f0 gui=NONE
-  hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
+  " hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
+  hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=#d60000 guibg=#500000 gui=NONE
   hi CursorLine ctermbg=234 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
   hi CursorColumn ctermbg=234 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
   hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#3d3f49 gui=NONE
-  hi LineNr ctermfg=60 ctermbg=NONE cterm=NONE guifg=#dd99ff guibg=#282a36 gui=NONE
+  hi LineNr ctermfg=60 ctermbg=NONE cterm=NONE guifg=#dd99ff guibg=#383a46 gui=NONE
   hi CursorLineNr ctermfg=228 ctermbg=234 cterm=NONE guifg=#f1fa8c guibg=#44475a gui=NONE
   hi VertSplit ctermfg=231 ctermbg=236 cterm=bold guifg=#64666d guibg=#64666d gui=bold
   hi MatchParen ctermfg=212 ctermbg=NONE cterm=underline guifg=#ff79c6 guibg=NONE gui=underline
   hi StatusLine ctermfg=231 ctermbg=236 cterm=bold guifg=#f8f8f2 guibg=#64666d gui=bold
   hi StatusLineNC ctermfg=231 ctermbg=236 cterm=NONE guifg=#f8f8f2 guibg=#64666d gui=NONE
-  hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#e4dbea guibg=#5A607A gui=NONE
-  hi PmenuSel ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
-  hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#282a36 guibg=#ffb86c gui=none
-  hi Search ctermfg=17 ctermbg=84 cterm=none guifg=#282a36 guibg=#a0df2b gui=none
+  hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f0f0f0 guibg=#44475a gui=NONE
+  hi PmenuSel ctermfg=NONE ctermbg=236 cterm=NONE guifg=#f60000 guibg=#500000 gui=NONE
+  " hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#282a36 guibg=#ffb86c gui=none
+  hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#500000 guibg=#d60000 gui=none
+  " hi Search ctermfg=17 ctermbg=84 cterm=none guifg=#282a36 guibg=#8cfd8a gui=none
+  hi Search ctermfg=17 ctermbg=84 cterm=none guifg=#f01717 guibg=NONE gui=none
   hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
   hi Folded ctermfg=61 ctermbg=235 cterm=NONE guifg=#ffddff guibg=#282a36 gui=NONE
   hi SignColumn ctermfg=246 ctermbg=235 cterm=NONE guifg=#909194 guibg=#44475a gui=NONE
@@ -53,7 +57,8 @@ if exists("syntax_on")
   hi ErrorMsg ctermfg=231 ctermbg=212 cterm=NONE guifg=#f8f8f0 guibg=#ff79c6 gui=NONE
   hi WarningMsg ctermfg=231 ctermbg=212 cterm=NONE guifg=#f8f8f0 guibg=#ff79c6 gui=NONE
   hi Float ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
-  hi Function ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  " hi Function ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi Function ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   hi Identifier ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE "before italic
   hi Keyword ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
   hi Label ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
@@ -72,7 +77,7 @@ if exists("syntax_on")
   hi Type ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
   hi rubyClass ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
-  hi rubyFunction ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi rubyFunction ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   hi rubyInterpolationDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
   hi rubySymbol ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
   hi rubyConstant ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE "before italic
@@ -100,7 +105,7 @@ if exists("syntax_on")
   hi htmlTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
   hi htmlEndTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
   hi htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
-  hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   hi htmlSpecialChar ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
   hi javaScriptFunction ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE "before italic
   hi javaScriptRailsFunction ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE
@@ -112,8 +117,8 @@ if exists("syntax_on")
   hi cssURL ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb86c guibg=NONE gui=NONE "before italic
   hi cssFunctionName ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE
   hi cssColor ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
-  hi cssPseudoClassId ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
-  hi cssClassName ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi cssPseudoClassId ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi cssClassName ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
   hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#6be5fd guibg=NONE gui=NONE
   hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -125,7 +130,7 @@ if exists("syntax_on")
   hi elixirAtom ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE "before italic"
   hi elixirModuleDeclaration ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE "before italic"
   hi elixirAlias ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE "before italic"
-  hi elixirInterpolationDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi elixirInterpolationDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   hi elixirStringDelimiter ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
   "}}}
   "
@@ -148,11 +153,11 @@ if exists("syntax_on")
   hi markdownCodeBlock ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
   hi markdownCodeDelimiter ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
 
-  hi markdownBlockquote ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
-  hi markdownListMarker ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
-  hi markdownOrderedListMarker ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
-  hi markdownRule ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
-  hi markdownHeadingRule ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi markdownBlockquote ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi markdownListMarker ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi markdownOrderedListMarker ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi markdownRule ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
+  hi markdownHeadingRule ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
 
   hi markdownUrlDelimiter ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb86c guibg=NONE gui=NONE "before italic"
   hi markdownLinkDelimiter ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb86c guibg=NONE gui=NONE "before italic"
@@ -160,7 +165,7 @@ if exists("syntax_on")
 
   hi markdownHeadingDelimiter ctermfg=117 ctermbg=NONE cterm=bold guifg=#8be9fd guibg=NONE gui=bold"
   hi markdownUrl ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
-  hi markdownUrlTitleDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#a0df2b guibg=NONE gui=NONE
+  hi markdownUrlTitleDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#8cfd8a guibg=NONE gui=NONE
   " }}}
 
 
