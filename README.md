@@ -29,6 +29,7 @@ $ cmd /c "mklink /D vimfiles C:\Users\kimura\Documents\project\tecokimura\vimfil
 
 
 ### for OS X or Linux
+git clone git@github.com:tecokimura/vimfiles.git
 ln -s ~/vimfiles/_gvimrc ~/.gvimrc
 ln -s ~/vimfiles/_vimrc ~/.vimrc
 ln -s ~/vimfiles ~/.vim
