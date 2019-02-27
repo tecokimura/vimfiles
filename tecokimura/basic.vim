@@ -18,11 +18,11 @@
 " nnoremap <C-l> <End>
 " inoremap <C-p> <Up>
 " inoremap <C-n> <Down>
-" inoremap <C-e> <End>
+inoremap <C-e> <End>
 
 " 
-" inoremap <C-b> <Left>
-" inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
 " inoremap <C-n> <Down>
 " inoremap <C-h> <BS>
 " inoremap <C-d> <Del>
@@ -41,7 +41,7 @@ set autoindent
 
 " Encoding
 set encoding=utf-8
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 syntax on " シンタックスON
 set number " 行数表示
@@ -51,6 +51,20 @@ set ignorecase " 大文字小文字を区別しない
 set backspace=indent,eol,start " BSの動作設定
 
 set ambiwidth=double " 日本語を２文字で表示
+
+set iminsert=0
+set imsearch=-1
+
+
+set cursorline     " カーソル行の背景色を変える
+set cursorcolumn   " カーソル位置のカラムの背景色を変える
+set cmdheight=2    " メッセージ表示欄を2行確保
+set showmatch      " 対応する括弧を強調表示
+set helpheight=999 " ヘルプを画面いっぱいに開く
+set list           " 不可視文字を表示
+" 不可視文字の表示記号指定
+set listchars=tab:▸\ ,eol:↲,extends:❯,precedes:❮
+
 
 "======
 " status line"
