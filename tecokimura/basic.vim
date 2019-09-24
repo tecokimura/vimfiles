@@ -13,22 +13,21 @@
 "=========
 
 
+" vimが好きになる本で勉強中のためコメントアウト
 " 補完とぶつかるのでコメントアウト
-" nnoremap <C-h> <Home>
-" nnoremap <C-l> <End>
+" nnoremap <C-a> <Home>
+" nnoremap <C-e> <End>
 " inoremap <C-p> <Up>
 " inoremap <C-n> <Down>
-inoremap <C-e> <End>
+" inoremap <C-e> <End>
 
-" 
-inoremap <C-b> <Left>
-inoremap <C-f> <Right>
+" inoremap <C-b> <Left>
+" inoremap <C-f> <Right>
 " inoremap <C-n> <Down>
 " inoremap <C-h> <BS>
 " inoremap <C-d> <Del>
 " inoremap <C-Up> <PageUp>
 " inoremap <C-Down> <Page>
-
 
 " 履歴
 set history=1024
