@@ -29,6 +29,53 @@
 " inoremap <C-Up> <PageUp>
 " inoremap <C-Down> <Page>
 
+noremap <Space>h ^
+
+
+" Leader key
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+
+inoremap <Leader>h <Left>
+inoremap <Leader>j <Down>
+inoremap <Leader>k <Up>
+inoremap <Leader>l <Right>
+
+inoremap <Leader>jk <Esc>
+
+nnoremap Y y$
+nnoremap x "_x
+nnoremap <C-k> "_dd
+inoremap <C-k> <ESC>"_ddi
+
+" サーチした検索語を画面中央に持ってくる
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap g* g*zz
+nmap g# g#zz
+
+" ---ノーマルモード---
+" [Esc] + [Esc]で検索のハイライトを消す
+nnoremap <Esc><Esc> :noh<CR>
+" 「+」でsplitリサイズ幅を増やす
+nnoremap + <C-W>k<C-W>+<C-W>p
+" 「-」でsplitリサイズ幅を減らす
+nnoremap - <C-W>k<C-W>-<C-W>p
+" 「)」でVsplitリサイズ幅を増やす
+nnoremap ) <C-W>h<C-W>><C-W>p
+" 「(」でVsplitリサイズ幅を減らす
+nnoremap ( <C-W>h<C-W><LT><C-W>p
+" 「tt」でタブを新しく作る
+nnoremap tt :<C-u>tabnew<CR>
+" 「tc」でタブを閉じる
+nnoremap tc :<C-u>tabclose<CR>
+" 「tf」で最初のタブへ
+nnoremap tf :<C-u>tabfirst<CR>
+" 「tl」で最後のタブへ
+nnoremap tl :<C-u>tablast<CR>
+
 " 履歴
 set history=1024
 
