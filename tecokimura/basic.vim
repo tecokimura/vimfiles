@@ -42,6 +42,7 @@ inoremap <Leader>k <Up>
 inoremap <Leader>l <Right>
 
 inoremap <Leader>jk <Esc>
+inoremap jk <Esc>
 
 nnoremap Y y$
 nnoremap x "_x
