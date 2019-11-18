@@ -29,25 +29,26 @@
 " inoremap <C-Up> <PageUp>
 " inoremap <C-Down> <Page>
 
-noremap <Space>h ^
 
 
 " Leader key
-let mapleader = "\<Space>"
+let mapleader = ","
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>h ^
+nnoremap <Leader>l $
 
 inoremap <Leader>h <Left>
 inoremap <Leader>j <Down>
 inoremap <Leader>k <Up>
 inoremap <Leader>l <Right>
 
-inoremap <Leader>jk <Esc>
-inoremap jk <Esc>
+inoremap <Leader>. <Esc>
+inoremap <Leader>b <Left>
 
 nnoremap Y y$
 nnoremap x "_x
-nnoremap <C-k> "_dd
-inoremap <C-k> <ESC>"_ddi
+nnoremap <C-k> "_dg_
+inoremap <C-k> <ESC>"_dg_i
 
 " サーチした検索語を画面中央に持ってくる
 nmap n nzz
