@@ -30,6 +30,9 @@
 " inoremap <C-Down> <Page>
 
 
+" 重複しないそうなので追加
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
 
 " Leader key
 let mapleader = ","
@@ -37,13 +40,8 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>h ^
 nnoremap <Leader>l $
 
-inoremap <Leader>h <Left>
-inoremap <Leader>j <Down>
-inoremap <Leader>k <Up>
-inoremap <Leader>l <Right>
-
 inoremap <Leader>. <Esc>
-inoremap <Leader>b <Left>
+inoremap <Leader>e <Esc>
 
 nnoremap Y y$
 nnoremap x "_x
