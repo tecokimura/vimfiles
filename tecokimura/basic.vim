@@ -30,7 +30,6 @@
 " inoremap <C-Down> <Page>
 
 
-
 " Leader key
 let mapleader = ","
 nnoremap <Leader>w :w<CR>
@@ -50,6 +49,8 @@ nnoremap x "_x
 nnoremap <C-k> "_dg_
 inoremap <C-k> <ESC>"_dg_i
 
+
+
 " サーチした検索語を画面中央に持ってくる
 nmap n nzz
 nmap N Nzz
@@ -57,6 +58,8 @@ nmap * *zz
 nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
+
+noremap gl g_
 
 " ---ノーマルモード---
 " [Esc] + [Esc]で検索のハイライトを消す
