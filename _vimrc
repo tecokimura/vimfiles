@@ -14,15 +14,18 @@
 set runtimepath+=~/.vim
 set runtimepath+=~/vimfiles
 
-" Default$B$N(Bvim$B$G;HMQ$G$-$k4pK\E*$J@_Dj(B
+" vim の機能だけのベース設定
 runtime! tecokimura/basic.vim
 
-" $B%W%i%0%$%s$NFI$_9~$_(B
+" プラグインの読み込み用
 runtime! tecokimura/plugins/*.vim
 
-" $B%W%i%0%$%sEy$N@_Dj(B
+" プラグインなど設定周り
 runtime! tecokimura/config.vim
 
-" $B%Q%=%3%sKh$N@_Dj(B
+" コマンドやエイリアス
+runtime! tecokimura/command.vim
+
+" 環境ごとに変更したい時
 runtime! tecokimura/justhere.vim
 

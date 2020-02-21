@@ -1,12 +1,12 @@
 
 " for netrw
-" 上部に表示される情報を非表示
+" https://qiita.com/gorilla0513/items/bf2f78dfec67242f5bcf
+let g:netrw_liststyle = 1
 let g:netrw_banner = 0
-" 表示形式をTreeViewに変更
-let g:netrw_liststyle = 3
-" 左右分割を右側に開く
 let g:netrw_altv = 1
-
+let g:netrw_sizestyle="H"
+let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
+let g:netrw_preview=1
 
 
 " for vaffle
