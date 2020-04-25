@@ -1,6 +1,10 @@
 set ambiwidth=double " 日本語を2文字で表示
 
-" windows
-set guifont=Ricty Diminished:h18
+" Win
+" set guifont=Ricty Diminished:h18
+
+" OS X (エスケープはOption+¥)
+set guifont=Ricty\ Diminished:h18
+" set guifont=Myrica\ Monospace:h18
 
 colorscheme draculace
