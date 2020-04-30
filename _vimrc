@@ -18,12 +18,12 @@ set runtimepath+=~/vimfiles
 runtime! tecokimura/basic.vim
 
 " プラグインの読み込み用
-runtime! tecokimura/plugins/*.vim
+runtime! tecokimura/plugin.vim
 
 " プラグインなど設定周り
 runtime! tecokimura/config.vim
 
-" コマンドやエイリアス
+" コマンド
 runtime! tecokimura/command.vim
 
 " 環境ごとに変更したい時

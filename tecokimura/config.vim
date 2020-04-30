@@ -9,10 +9,3 @@ let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
 let g:netrw_preview=1
 
 
-" for vaffle
-if has("vim_starting")
-    set runtimepath+=~/vimfiles/tecokimura/plugins/vaffle.vim/
-    let g:vaffle_auto_cd=1
-endif
-
-

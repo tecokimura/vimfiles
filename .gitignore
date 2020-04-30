@@ -3,5 +3,6 @@
 .DS_Store
 .netrwhist
 tmp/*
-/tecokimura/plugins/
+plugged/
+autoload/
 !.gitkeep

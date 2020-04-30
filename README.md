@@ -40,3 +40,9 @@ ln -s ~/vimfiles ~/.vim
 1. git clone or downloadZip
 2. copy vaffle.vim vimfiles\tecokimura\plugins\
 
+
+###  Plugin
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim > :PlugInstall
+
+
