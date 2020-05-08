@@ -90,6 +90,9 @@ nnoremap tl :<C-u>tablast<CR>
 " 履歴
 set history=1024
 
+" ディレクトリを自動で移動する
+set autochdir
+
 " インデント
 set tabstop=4
 set shiftwidth=4
@@ -163,6 +166,4 @@ set directory=~/vimfiles/tmp/
 set undodir=~/vimfiles/tmp/
 
 set viminfo+=n~/vimfiles/tmp/viminfo
-
-
 

@@ -8,3 +8,6 @@ set guifont=Ricty\ Diminished:h18
 " set guifont=Myrica\ Monospace:h18
 
 colorscheme draculace
+
+" 環境ごとに変更したい時
+runtime! just.gvim
