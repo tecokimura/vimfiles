@@ -8,4 +8,10 @@ let g:netrw_sizestyle="H"
 let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
 let g:netrw_preview=1
 
+" for easymotion
+" https://tombomemo.com/vim-easymotion-install-settings/
+"s{char}{char} to move to {char}{char}
+" write to basic.vim
+
+
 colorscheme iceberg

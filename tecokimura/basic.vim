@@ -36,12 +36,22 @@ inoremap <C-f> <Right>
 
 " Leader key
 let mapleader = ","
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>h ^
-nnoremap <Leader>l $
+nnoremap <Leader>u :w<CR> " easymotionと誤爆するので変更
+" nnoremap <Leader>h ^
+" nnoremap <Leader>; $
 
 inoremap <Leader>. <Esc>
 inoremap <Leader>e <Esc>
+
+" for easymotion
+" https://tombomemo.com/vim-easymotion-install-settings/
+"s{char}{char} to move to {char}{char}
+map <Leader>s <Plug>(easymotion-bd-f2)
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 nnoremap Y y$
 nnoremap x "_x
