@@ -60,11 +60,11 @@ inoremap <C-k> <ESC>"_dg_i
 
 
 " Mastering VIM
-inoremap ' ''<esc>i
-inoremap " ""<esc>i
-inoremap ( ()<esc>i
-inoremap [ []<esc>i
-inoremap { {}<esc>i
+" inoremap ' ''<esc>i
+" inoremap " ""<esc>i
+" inoremap ( ()<esc>i
+" inoremap [ []<esc>i
+" inoremap { {}<esc>i
 
 
 " サーチした検索語を画面中央に持ってくる
