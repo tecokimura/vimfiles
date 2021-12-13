@@ -52,8 +52,29 @@ ln -s ~/vimfiles/_vimrc ~/.config/nvim/init.vim
 2. copy vaffle.vim vimfiles\tecokimura\plugins\
 
 
-###  Plugin
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim > :PlugInstall
+## Plugins
+### Install
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  
+vim > :PlugInstall  
 
+### List
+- vim-unimpaired
+https://github.com/tpope/vim-unimpaired
+
+- 'ctrlp.vim'
+https://github.com/ctrlpvim/ctrlp.vim
+Ctrl + P でファイルを検索して開ける
+
+- 'ack.vim'
+https://github.com/mileszs/ack.vim
+
+- 'easymotion'
+https://github.com/easymotion/vim-easymotion
+
+- 'sjl/gundo.vim'
+https://github.com/sjl/gundo.vim
+
+- 'cocopon/iceberg.vim'
+https://github.com/cocopon/iceberg.vim
+お気に入りのカラースキーム
 
