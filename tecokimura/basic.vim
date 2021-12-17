@@ -77,25 +77,28 @@ nmap g# g#zz
 
 noremap gl g_
 
-" ---ノーマルモード---
-" [Esc] + [Esc]で検索のハイライトを消す
-nnoremap <Esc><Esc> :noh<CR>
-" 「+」でsplitリサイズ幅を増やす
-nnoremap + <C-W>k<C-W>+<C-W>p
-" 「-」でsplitリサイズ幅を減らす
-nnoremap - <C-W>k<C-W>-<C-W>p
-" 「)」でVsplitリサイズ幅を増やす
-nnoremap ) <C-W>h<C-W>><C-W>p
-" 「(」でVsplitリサイズ幅を減らす
-nnoremap ( <C-W>h<C-W><LT><C-W>p
-" 「tt」でタブを新しく作る
-nnoremap tt :<C-u>tabnew<CR>
-" 「tc」でタブを閉じる
-nnoremap tc :<C-u>tabclose<CR>
-" 「tf」で最初のタブへ
-nnoremap tf :<C-u>tabfirst<CR>
-" 「tl」で最後のタブへ
-nnoremap tl :<C-u>tablast<CR>
+" " ---ノーマルモード---
+" " [Esc] + [Esc]で検索のハイライトを消す
+" nnoremap <Esc><Esc> :noh<CR>
+" " 「+」でsplitリサイズ幅を増やす
+" nnoremap + <C-W>k<C-W>+<C-W>p
+" " 「-」でsplitリサイズ幅を減らす
+" nnoremap - <C-W>k<C-W>-<C-W>p
+" " 「)」でVsplitリサイズ幅を増やす
+" nnoremap ) <C-W>h<C-W>><C-W>p
+" " 「(」でVsplitリサイズ幅を減らす
+" nnoremap ( <C-W>h<C-W><LT><C-W>p
+" " 「tt」でタブを新しく作る
+" nnoremap tt :<C-u>tabnew<CR>
+" " 「tc」でタブを閉じる
+" nnoremap tc :<C-u>tabclose<CR>
+" " 「tf」で最初のタブへ
+" nnoremap tf :<C-u>tabfirst<CR>
+" " 「tl」で最後のタブへ
+" nnoremap tl :<C-u>tablast<CR>
+
+" vim使ってくれてありがとうを非表示
+set notitle
 
 " 履歴
 set history=1024
@@ -114,7 +117,10 @@ set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 syntax on " シンタックスON
-set number " 行数表示
+
+set nonumber " 行数非表示
+nnoremap <Space>n :set invnumber<CR> " https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
+
 set incsearch  " インクリメンタルサーチ
 set smartcase " 小文字なら区別しないが大文字なら区別する
 set ignorecase " 大文字小文字を区別しない
@@ -129,7 +135,9 @@ set imsearch=-1
 set cursorline     " カーソル行の背景色を変える
 set cursorcolumn   " カーソル位置のカラムの背景色を変える
 set cmdheight=2    " メッセージ表示欄を2行確保
+set showcmd        " 対応する括弧を強調表示
 set showmatch      " 対応する括弧を強調表示
+set helplang=ja,en " ヘルプを画面いっぱいに開く
 set helpheight=999 " ヘルプを画面いっぱいに開く
 set list           " 不可視文字を表示
 " 不可視文字の表示記号指定

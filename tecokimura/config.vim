@@ -13,5 +13,4 @@ let g:netrw_preview=1
 "s{char}{char} to move to {char}{char}
 " write to basic.vim
 
-
-colorscheme iceberg
+colorscheme draculace

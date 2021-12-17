@@ -15,16 +15,7 @@ set runtimepath+=~/.vim
 set runtimepath+=~/vimfiles
 
 " プラグインの読み込み用
-call plug#begin()
-Plug 'tpope/vim-unimpaired'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'easymotion/vim-easymotion'
-
-Plug 'cocopon/iceberg.vim'
-Plug 'haishanh/night-owl.vim'
-
-call plug#end()
-
+runtime! tecokimura/plugin.vim
 
 " プラグインなど設定周り
 runtime! tecokimura/config.vim

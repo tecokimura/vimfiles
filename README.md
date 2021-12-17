@@ -89,3 +89,7 @@ https://github.com/haishanh/night-owl.vim
 2. copy vaffle.vim vimfiles\tecokimura\plugins\
 
 
+## Alias
+./tecokimura/command.vim
+
+
