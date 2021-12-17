@@ -47,11 +47,6 @@ ln -s ~/vimfiles/_vimrc ~/.config/nvim/init.vim
 ```
 
 
-### [Vaffle](https://github.com/cocopon/vaffle.vim)
-1. git clone or downloadZip
-2. copy vaffle.vim vimfiles\tecokimura\plugins\
-
-
 ## Plugins
 ### Install
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  
@@ -59,22 +54,38 @@ vim > :PlugInstall
 
 ### List
 - vim-unimpaired
-https://github.com/tpope/vim-unimpaired
+https://github.com/tpope/vim-unimpaired  
+[b, ]b でバッファを簡単に移動できる！
+
 
 - 'ctrlp.vim'
 https://github.com/ctrlpvim/ctrlp.vim
 Ctrl + P でファイルを検索して開ける
 
-- 'ack.vim'
-https://github.com/mileszs/ack.vim
-
 - 'easymotion'
 https://github.com/easymotion/vim-easymotion
+<Leader> を,に設定しているので「,s」や「,l」でエディタ内を飛び回れる   
 
 - 'sjl/gundo.vim'
 https://github.com/sjl/gundo.vim
+Python入れなかったから使えてないけど便利そうなので入れておく
+
+#### ColorScheme
+:colorscheme で一覧
 
 - 'cocopon/iceberg.vim'
 https://github.com/cocopon/iceberg.vim
 お気に入りのカラースキーム
+:colorscheme iceberg
+
+- 'haishanh/night-owl.vim'
+https://github.com/haishanh/night-owl.vim
+見つけた良さげなカラースキーム
+:colorscheme night-owl
+
+## Options
+### [Vaffle](https://github.com/cocopon/vaffle.vim)
+1. git clone or downloadZip
+2. copy vaffle.vim vimfiles\tecokimura\plugins\
+
 
