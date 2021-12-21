@@ -27,5 +27,6 @@ runtime! tecokimura/command.vim
 runtime! tecokimura/basic.vim
 
 " 環境ごとに変更したい時
+runtime! tecokimura/justhere.vim
 runtime! justhere.vim
 

@@ -1,13 +1,18 @@
 set ambiwidth=double " 日本語を2文字で表示
-
-" Win
-" set guifont=Ricty Diminished:h18
-
-" OS X (エスケープはOption+¥)
-set guifont=Ricty\ Diminished:h16
-" set guifont=Myrica\ Monospace:h18
-
+set belloff=all
+set guifont=Ricty\ Diminished:h14
 colorscheme draculace
 
+" Win
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
+"------------
+
+" OS X (エスケープはOption+¥)
+"------------
+
+
 " 環境ごとに変更したい時
-runtime! just.gvim
+runtime! tecokimura/justhere.vim
+runtime! justhere.vim

@@ -6,5 +6,7 @@ tmp/*
 plugged/
 autoload/
 !.gitkeep
-just.vim
-just.gvim
+justhere.vim
+justhere.gvim
+tecokimura/justhere.vim
+tecokimura/justhere.gvim

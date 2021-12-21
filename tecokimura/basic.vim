@@ -111,6 +111,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab " tabではなくspaceを入れる
 set autoindent
+set nowrap
 
 " Encoding
 set encoding=utf-8
@@ -119,7 +120,7 @@ set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 syntax on " シンタックスON
 
 set nonumber " 行数非表示
-nnoremap <Space>n :set invnumber<CR> " https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
+nnoremap <Leader>n :set invnumber<CR>  " https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
 
 set incsearch  " インクリメンタルサーチ
 set smartcase " 小文字なら区別しないが大文字なら区別する
@@ -130,7 +131,6 @@ set ambiwidth=double " 日本語を２文字で表示
 
 set iminsert=0
 set imsearch=-1
-
 
 set cursorline     " カーソル行の背景色を変える
 set cursorcolumn   " カーソル位置のカラムの背景色を変える
