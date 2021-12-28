@@ -8,9 +8,27 @@ Plug 'tpope/vim-unimpaired'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'simeji/winresizer'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lambdalisue/fern.vim'
+Plug 'yuki-yano/fern-preview.vim'
 
 Plug 'cocopon/iceberg.vim'
 Plug 'haishanh/night-owl.vim'
 
 call plug#end()
+
+" https://github.com/yuki-yano/fern-preview.vim
+
+let g:fern#default_hidden=1
+nnoremap <silent> <Leader>e :<C-u>Fern .<CR>
+
+function! s:fern_settings() abort
+  nmap <silent> <buffer> p     <Plug>(fern-action-preview:toggle)
+  nmap <silent> <buffer> <C-p> <Plug>(fern-action-preview:auto:toggle)
+  nmap <silent> <buffer> <C-d> <Plug>(fern-action-preview:scroll:down:half)
+  nmap <silent> <buffer> <C-u> <Plug>(fern-action-preview:scroll:up:half)
+endfunction
+
+augroup fern-settings
+  autocmd!
+  autocmd FileType fern call s:fern_settings()
+augroup END

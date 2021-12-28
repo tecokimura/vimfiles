@@ -57,39 +57,43 @@ vim > :PlugInstall
 https://github.com/tpope/vim-unimpaired  
 [b, ]b でバッファを簡単に移動できる！
 
-
 - 'ctrlp.vim'
-https://github.com/ctrlpvim/ctrlp.vim
-Ctrl + P でファイルを検索して開ける
+https://github.com/ctrlpvim/ctrlp.vim  
+Ctrl + P でファイルを検索して開ける  
 
-- 'easymotion'
-https://github.com/easymotion/vim-easymotion
-<Leader> を,に設定しているので「,s」や「,l」でエディタ内を飛び回れる   
+- 'easymotion'  
+https://github.com/easymotion/vim-easymotion  
+<Leader> を,に設定しているので「,s」や「,l」でエディタ内を飛び回れる     
 
-- 'sjl/gundo.vim'
-https://github.com/sjl/gundo.vim
-Python入れなかったから使えてないけど便利そうなので入れておく
+- 'Fern'
+https://github.com/lambdalisue/fern.vim  
+https://github.com/yuki-yano/fern-preview.vim  
+ファイラとプレビュープラグイン試用中  
 
-#### ColorScheme
-:colorscheme で一覧
-
-- 'cocopon/iceberg.vim'
-https://github.com/cocopon/iceberg.vim
-お気に入りのカラースキーム
-:colorscheme iceberg
-
-- 'haishanh/night-owl.vim'
-https://github.com/haishanh/night-owl.vim
-見つけた良さげなカラースキーム
-:colorscheme night-owl
-
-## Options
-### [Vaffle](https://github.com/cocopon/vaffle.vim)
-1. git clone or downloadZip
-2. copy vaffle.vim vimfiles\tecokimura\plugins\
-
-
-## Alias
-./tecokimura/command.vim
-
+- 'sjl/gundo.vim'  
+https://github.com/sjl/gundo.vim  
+Python入れなかったから使えてないけど便利そうなので入れておく  
+  
+#### ColorScheme  
+:colorscheme で一覧  
+  
+- 'cocopon/iceberg.vim'  
+https://github.com/cocopon/iceberg.vim  
+お気に入りのカラースキーム  
+:colorscheme iceberg  
+  
+- 'haishanh/night-owl.vim'  
+https://github.com/haishanh/night-owl.vim  
+見つけた良さげなカラースキーム  
+:colorscheme night-owl  
+  
+## Options  
+### [Vaffle](https://github.com/cocopon/vaffle.vim)  
+1. git clone or downloadZip  
+2. copy vaffle.vim vimfiles\tecokimura\plugins\  
+  
+  
+## Alias  
+./tecokimura/command.vim  
+  
 
