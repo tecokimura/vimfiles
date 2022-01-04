@@ -34,6 +34,10 @@
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
+" バッファ切り替えを入れる
+nmap <C-p> <Plug>AirlineSelectPrevTab
+nmap <C-n> <Plug>AirlineSelectNextTab
+
 " Leader key
 let mapleader = ","
 nnoremap <Leader>u :w<CR> " easymotionと誤爆するので変更

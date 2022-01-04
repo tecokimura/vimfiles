@@ -11,13 +11,17 @@ Plug 'simeji/winresizer'
 Plug 'lambdalisue/fern.vim'
 Plug 'yuki-yano/fern-preview.vim'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 Plug 'cocopon/iceberg.vim'
 Plug 'haishanh/night-owl.vim'
 
 call plug#end()
 
+"
+" for Fern
 " https://github.com/yuki-yano/fern-preview.vim
-
 let g:fern#default_hidden=1
 nnoremap <silent> <Leader>e :<C-u>Fern .<CR>
 
@@ -32,3 +36,12 @@ augroup fern-settings
   autocmd!
   autocmd FileType fern call s:fern_settings()
 augroup END
+
+
+"======
+" for Airline
+"---------
+" let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'wombat'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
