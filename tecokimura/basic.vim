@@ -70,6 +70,12 @@ inoremap <C-k> <ESC>"_dg_i
 " inoremap [ []<esc>i
 " inoremap { {}<esc>i
 
+" 補完機能の設定
+" https://note.com/yasukotelin/n/na87dc604e042
+inoremap <expr><CR> pumvisible() ? "<C-y>" : "<CR>"
+set completeopt=menuone,noinsert
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 
 " サーチした検索語を画面中央に持ってくる
 nmap n nzz

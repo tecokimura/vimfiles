@@ -73,6 +73,20 @@ https://github.com/yuki-yano/fern-preview.vim
 - 'sjl/gundo.vim'  
 https://github.com/sjl/gundo.vim  
 Python入れなかったから使えてないけど便利そうなので入れておく  
+
+#### CoC
+- 'neoclide/coc.nvim', {'branch': 'release'}  
+
+##### ERROR: client coc abnormal exit with 1
+node.js verison確認する  
+https://github.com/neoclide/coc.nvim  
+nodist でnodeのversionが低くて失敗してた・・・  
+   
+#### Airline  
+- 'vim-airline/vim-airline'  
+- 'vim-airline/vim-airline-themes'  
+  
+'bubblegum' or 'wombat' がよさそう  
   
 #### ColorScheme  
 :colorscheme で一覧  

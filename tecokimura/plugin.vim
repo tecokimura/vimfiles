@@ -14,6 +14,9 @@ Plug 'yuki-yano/fern-preview.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'cocopon/iceberg.vim'
 Plug 'haishanh/night-owl.vim'
 
