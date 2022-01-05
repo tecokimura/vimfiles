@@ -1,16 +1,20 @@
 set ambiwidth=double " 日本語を2文字で表示
 set belloff=all
-set guifont=Ricty\ Diminished:h14
+" set guifont=Ricty\ Diminished:h14
+set guifont=FirgeNerd:h14
 colorscheme draculace
 
+"======
 " Win
+"---------
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
 source $VIMRUNTIME/menu.vim
-"------------
 
+
+"======
 " OS X (エスケープはOption+¥)
-"------------
+"---------
 
 
 " 環境ごとに変更したい時

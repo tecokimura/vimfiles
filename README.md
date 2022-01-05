@@ -12,7 +12,7 @@
 "                  \__\/         \__\/         \__\/         \__\/                     \__\/         \__\/         \__\/         \__\/    
 "=========
 
-# Hello tecokimura's vimrc
+# Hello Wacco's vimrc
 
 ### my vim
 - git clone か zipでダウンロードする
@@ -57,10 +57,6 @@ vim > :PlugInstall
 https://github.com/tpope/vim-unimpaired  
 [b, ]b でバッファを簡単に移動できる！
 
-- 'ctrlp.vim'
-https://github.com/ctrlpvim/ctrlp.vim  
-Ctrl + P でファイルを検索して開ける  
-
 - 'easymotion'  
 https://github.com/easymotion/vim-easymotion  
 <Leader> を,に設定しているので「,s」や「,l」でエディタ内を飛び回れる     
@@ -86,15 +82,22 @@ https://momozo.tech/2021/03/08/fzf-vim%E3%81%A8ripgrep%E3%81%A7%E3%83%95%E3%82%A
 「,w」 :Windows<CR>
 「,h」 :History<CR>
 
+win)msvc版をインストール  
+Mac)brew install fzf
+> /usr/local/opt/fzf/install を実行
+
 ##### ripgrep
 FZF を使うのに手動インストールしました  
 https://github.com/BurntSushi/ripgrep/releases  
-msvc版をインストール
+win) msvc版をインストール  
+Mac) brew install ripgrep
+
 
 ##### bat
-FZF を使うのに手動インストールしました  
+FZF を使う為に手動インストールしました  
 https://github.com/sharkdp/bat/releases
-msvc版をインストール
+Win) msvc版をインストール  
+Mac) brew install bat
 
 #### CoC
 - 'neoclide/coc.nvim', {'branch': 'release'}  
@@ -108,20 +111,20 @@ nodist でnodeのversionが低くて失敗してたので更新したら正常�
 - 'vim-airline/vim-airline'  
 - 'vim-airline/vim-airline-themes'  
   
-'bubblegum' or 'wombat' がよさそう  
+'papercolor', 'bubblegum' or 'wombat' がよさそう  
   
 #### ColorScheme  
 :colorscheme で一覧  
-  
-- 'cocopon/iceberg.vim'  
-https://github.com/cocopon/iceberg.vim  
-お気に入りのカラースキーム  
-:colorscheme iceberg  
   
 - 'haishanh/night-owl.vim'  
 https://github.com/haishanh/night-owl.vim  
 見つけた良さげなカラースキーム  
 :colorscheme night-owl  
+  
+- 'cocopon/iceberg.vim'  
+https://github.com/cocopon/iceberg.vim  
+お気に入りのカラースキーム  
+:colorscheme iceberg  
   
 ## Alias  
 ./tecokimura/command.vim  
