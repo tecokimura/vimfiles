@@ -38,13 +38,16 @@ inoremap <C-f> <Right>
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
 
+"======
 " Leader key
+"---------
 let mapleader = ","
-nnoremap <Leader>u :w<CR> " easymotionと誤爆するので変更
-" nnoremap <Leader>h ^
-" nnoremap <Leader>; $
 
-inoremap <Leader>. <Esc>
+" https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
+nnoremap <Leader>i :set invnumber<CR>
+
+nnoremap <Leader>u :w<CR> " easymotionと誤爆するので変更
+
 inoremap <Leader>e <Esc>
 
 " for easymotion
@@ -56,6 +59,19 @@ nmap <Leader>s <Plug>(easymotion-overwin-f2)
 " Move to line
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+" for Fern
+" https://qiita.com/youichiro/items/b4748b3e96106d25c5bc
+nnoremap <Leader>n :Fern . -reveal=% -drawer -toggle -width=30<CR>
+
+" for FZF
+" https://momozo.tech/2021/03/08/fzf-vim%E3%81%A8ripgrep%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E5%85%A8%E6%96%87%E3%82%92%E6%9B%96%E6%98%A7%E6%A4%9C%E7%B4%A2%E3%81%99%E3%82%8B/
+:nnoremap <Leader>f :FZF<CR>
+:nnoremap <Leader>r :Rg
+:nnoremap <Leader>b :Buffers<CR>
+:nnoremap <Leader>w :Windows<CR>
+:nnoremap <Leader>h :History<CR>
+
 
 nnoremap Y y$
 nnoremap x "_x
@@ -130,7 +146,6 @@ set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 syntax on " シンタックスON
 
 set nonumber " 行数非表示
-nnoremap <Leader>n :set invnumber<CR>  " https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
 
 set incsearch  " インクリメンタルサーチ
 set smartcase " 小文字なら区別しないが大文字なら区別する

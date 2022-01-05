@@ -70,9 +70,31 @@ https://github.com/lambdalisue/fern.vim
 https://github.com/yuki-yano/fern-preview.vim  
 ファイラとプレビュープラグイン試用中  
 
+「,n」でファイラをIDEのように起動する
+
+
 - 'sjl/gundo.vim'  
 https://github.com/sjl/gundo.vim  
 Python入れなかったから使えてないけど便利そうなので入れておく  
+
+#### Fzf
+https://momozo.tech/2021/03/08/fzf-vim%E3%81%A8ripgrep%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E5%85%A8%E6%96%87%E3%82%92%E6%9B%96%E6%98%A7%E6%A4%9C%E7%B4%A2%E3%81%99%E3%82%8B/  
+
+「,f」 :FZF<CR>
+「,r」 :Rg
+「,b」 :Buffers<CR>
+「,w」 :Windows<CR>
+「,h」 :History<CR>
+
+##### ripgrep
+FZF を使うのに手動インストールしました  
+https://github.com/BurntSushi/ripgrep/releases  
+msvc版をインストール
+
+##### bat
+FZF を使うのに手動インストールしました  
+https://github.com/sharkdp/bat/releases
+msvc版をインストール
 
 #### CoC
 - 'neoclide/coc.nvim', {'branch': 'release'}  
@@ -80,7 +102,7 @@ Python入れなかったから使えてないけど便利そうなので入れ�
 ##### ERROR: client coc abnormal exit with 1
 node.js verison確認する  
 https://github.com/neoclide/coc.nvim  
-nodist でnodeのversionが低くて失敗してた・・・  
+nodist でnodeのversionが低くて失敗してたので更新したら正常に動きました・・・  
    
 #### Airline  
 - 'vim-airline/vim-airline'  
@@ -101,13 +123,10 @@ https://github.com/haishanh/night-owl.vim
 見つけた良さげなカラースキーム  
 :colorscheme night-owl  
   
-## Options  
-### [Vaffle](https://github.com/cocopon/vaffle.vim)  
-1. git clone or downloadZip  
-2. copy vaffle.vim vimfiles\tecokimura\plugins\  
-  
-  
 ## Alias  
 ./tecokimura/command.vim  
   
+## Fonts
+https://github.com/yuru7/Firge/releases
+(https://qiita.com/tawara_/items/374f3ca0a386fab8b305)
 
