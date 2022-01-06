@@ -125,6 +125,7 @@ noremap gl g_
 
 " vim使ってくれてありがとうを非表示
 set notitle
+set belloff=all
 
 " 履歴
 set history=1024

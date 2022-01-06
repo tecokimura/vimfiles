@@ -53,7 +53,21 @@ augroup END
 let g:airline_theme = 'papercolor'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline_powerline_fonts = 1
+let g:airline_mode_map = {
+    \ 'n' : 'N',
+    \ 'i' : 'Insert',
+    \ 'R' : 'Replace',
+    \ 'c' : 'Cmd',
+    \ 'v' : 'Visual',
+    \ 'V' : 'V-Line',
+    \ 'V' : 'V-Block',
+    \ }
+
+let g:airline#extensions#default#layout = [
+    \ [ 'a', 'b', 'c'],
+    \ [ 'x', 'y', 'warning', 'error']
+    \ ]
+
 
 "======
 " for Fzf
