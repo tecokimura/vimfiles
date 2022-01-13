@@ -44,11 +44,14 @@ nmap <C-n> <Plug>AirlineSelectNextTab
 let mapleader = ","
 
 " https://qiita.com/powdersugar828828/items/279ca9a791b0b901f0de
-nnoremap <Leader>i :set invnumber<CR>
+nnoremap <Leader>n :set invnumber<CR>
 
 nnoremap <Leader>u :w<CR> " easymotionと誤爆するので変更
-
 inoremap <Leader>e <Esc>
+nnoremap <Leader>l g_
+nnoremap <Leader>h ^
+nnoremap <Leader>p %
+
 
 " for easymotion
 " https://tombomemo.com/vim-easymotion-install-settings/
@@ -57,20 +60,20 @@ map <Leader>s <Plug>(easymotion-bd-f2)
 nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
 " Move to line
-map <Leader>l <Plug>(easymotion-bd-jk)
-nmap <Leader>l <Plug>(easymotion-overwin-line)
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
 
 " for Fern
 " https://qiita.com/youichiro/items/b4748b3e96106d25c5bc
-nnoremap <Leader>n :Fern . -reveal=% -drawer -toggle -width=30<CR>
+nnoremap <Leader>f :Fern . -reveal=% -drawer -toggle -width=30<CR>
 
 " for FZF
 " https://momozo.tech/2021/03/08/fzf-vim%E3%81%A8ripgrep%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E5%85%A8%E6%96%87%E3%82%92%E6%9B%96%E6%98%A7%E6%A4%9C%E7%B4%A2%E3%81%99%E3%82%8B/
-:nnoremap <Leader>f :FZF<CR>
+:nnoremap <Leader>e :FZF<CR>
 :nnoremap <Leader>r :Rg
 :nnoremap <Leader>b :Buffers<CR>
-:nnoremap <Leader>w :Windows<CR>
-:nnoremap <Leader>h :History<CR>
+:nnoremap <Leader>W :Windows<CR>
+:nnoremap <Leader>H :History<CR>
 
 
 nnoremap Y y$

@@ -14,6 +14,22 @@
 
 # Hello Wacco's vimrc
 
+# How to Use  
+## Filer  
+- ,n  
+  
+## FZF  
+- ,f :Open file  
+- ,r :grep file  
+- ,h :Search history  
+- ,b :Buffer list  
+  
+## Source code jump  
+- ,s  
+- ,l  
+
+
+## Setup
 ### my vim
 - git clone か zipでダウンロードする
 - https://github.com/tecokimura/vimfiles/archive/master.zip
@@ -27,10 +43,6 @@ $ cmd /c "mklink _gvimrc %USERPROFILE%\vimfiles\_gvimrc"
 $ cmd /c "mklink _vimrc %USERPROFILE%\vimfiles\_vimrc"
 $ cmd /c "mklink /D %USERPROFILE%\AppData\Local\nvim %USERPROFILE%\vimfiles"
 $ cmd /c "mklink %USERPROFILE%\AppData\Local\nvim\init.vim %USERPROFILE%\vimfiles\_vimrc"
-
-# NeoVIM
-$ cmd /c "mklink /D vimfiles C:\Users\kimura\Documents\project\tecokimura\vimfiles"
-
 ```
 
 ### for OS X or Linux 
