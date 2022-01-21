@@ -13,21 +13,26 @@
 "=========
 
 # Hello Wacco's vimrc
+自分のvimrcをひっそりと温めて育てるリポジトリです。  
 
 # How to Use  
 ## Filer  
-- ,n  
+- ,n : Show line number
   
 ## FZF  
-- ,f :Open file  
+- ,f :Open Filer  
+- ,e :Search file for Edit  
 - ,r :grep file  
 - ,h :Search history  
 - ,b :Buffer list  
   
 ## Source code jump  
-- ,s  
-- ,l  
+- ,s : easymotion with words
+- ,L : easymotion with lines 
 
+
+## 
+- ,l : Alias g_
 
 ## Setup
 ### my vim
@@ -52,14 +57,14 @@ ln -s ~/vimfiles/_gvimrc ~/.gvimrc
 ln -s ~/vimfiles/_vimrc ~/.vimrc
 ln -s ~/vimfiles ~/.vim
 
-# NeoVIM
-mkdir -p ~/.config
-ln -s ~/vimfiles ~/.config/nvim
-ln -s ~/vimfiles/_vimrc ~/.config/nvim/init.vim
+# NeoVIM（未確認工事中）  
+mkdir -p ~/.config  
+ln -s ~/vimfiles ~/.config/nvim  
+ln -s ~/vimfiles/_vimrc ~/.config/nvim/init.vim  
 ```
 
 
-## Plugins
+## Plugin Manager
 ### Install
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  
 vim > :PlugInstall  
@@ -71,14 +76,14 @@ https://github.com/tpope/vim-unimpaired
 
 - 'easymotion'  
 https://github.com/easymotion/vim-easymotion  
-<Leader> を,に設定しているので「,s」や「,l」でエディタ内を飛び回れる     
+<Leader> を,に設定しているので「,s」や「,L」でエディタ内を飛び回れる     
 
 - 'Fern'
 https://github.com/lambdalisue/fern.vim  
 https://github.com/yuki-yano/fern-preview.vim  
 ファイラとプレビュープラグイン試用中  
 
-「,n」でファイラをIDEのように起動する
+「,f」でファイラをIDEのように起動する
 
 
 - 'sjl/gundo.vim'  
@@ -88,7 +93,7 @@ Python入れなかったから使えてないけど便利そうなので入れ�
 #### Fzf
 https://momozo.tech/2021/03/08/fzf-vim%E3%81%A8ripgrep%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E5%85%A8%E6%96%87%E3%82%92%E6%9B%96%E6%98%A7%E6%A4%9C%E7%B4%A2%E3%81%99%E3%82%8B/  
 
-「,f」 :FZF<CR>
+「,e」 :FZF<CR>
 「,r」 :Rg
 「,b」 :Buffers<CR>
 「,w」 :Windows<CR>

@@ -15,3 +15,11 @@
 :command! CsIce colorscheme iceberg
 :command! CsAce colorscheme draculace
 
+
+" Font size の変更
+:command! Font10 set guifont=FirgeNerd:h10
+:command! Font12 set guifont=FirgeNerd:h12
+:command! Font14 set guifont=FirgeNerd:h14
+:command! Font16 set guifont=FirgeNerd:h16
+:command! Font18 set guifont=FirgeNerd:h18
+
