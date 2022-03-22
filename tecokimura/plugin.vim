@@ -2,7 +2,13 @@
 " ここに記述をしても .vimrc を再読み込みしないと
 " :source ~/.vimrc
 " :PlugInstall などに反映されません！
-"
+
+
+
+if $NVM_BIN != ""
+  let g:coc_node_path = '$NVM_BIN/node'
+endif
+
 call plug#begin()
 Plug 'tpope/vim-unimpaired'
 " Plug 'ctrlpvim/ctrlp.vim'
