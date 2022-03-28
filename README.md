@@ -61,6 +61,11 @@ ln -s ~/vimfiles ~/.vim
 mkdir -p ~/.config  
 ln -s ~/vimfiles ~/.config/nvim  
 ln -s ~/vimfiles/_vimrc ~/.config/nvim/init.vim  
+
+# for zsh(もっと良い方法ありそう)
+ln -s ~/.zshrc ~/.zshenv
+
+
 ```
 
 
