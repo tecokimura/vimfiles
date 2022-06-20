@@ -63,6 +63,13 @@ nmap <Leader>s <Plug>(easymotion-overwin-f2)
 map <Leader>L <Plug>(easymotion-bd-jk)
 nmap <Leader>L <Plug>(easymotion-overwin-line)
 
+" SoftwareDesign2022/7 page.36
+map f <Plug>(easymotion-fl)
+map t <Plug>(easymotion-tl)
+map F <Plug>(easymotion-Fl)
+map T <Plug>(easymotion-Tl)
+
+
 " for Fern
 " https://qiita.com/youichiro/items/b4748b3e96106d25c5bc
 nnoremap <Leader>f :Fern . -reveal=% -drawer -toggle -width=30<CR>
