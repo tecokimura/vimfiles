@@ -9,7 +9,7 @@ call plug#begin()
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
 Plug 'simeji/winresizer'
-Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern.vim', {'branch': 'main'}
 Plug 'yuki-yano/fern-preview.vim'
 
 Plug 'vim-airline/vim-airline'

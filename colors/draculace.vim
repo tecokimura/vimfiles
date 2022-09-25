@@ -23,7 +23,7 @@ let g:colors_name = "draculace"
 
 hi Cursor ctermfg=17 ctermbg=231 cterm=NONE guifg=#282a36 guibg=#f8f8f0 gui=NONE
 " hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
-hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=#d60000 guibg=#500000 gui=NONE
+hi Visual ctermfg=160 ctermbg=15 cterm=NONE guifg=#d60000 guibg=#500000 gui=NONE
 hi CursorLine ctermbg=234 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
 hi CursorColumn ctermbg=234 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#3d3f49 gui=NONE
@@ -33,8 +33,8 @@ hi VertSplit ctermfg=231 ctermbg=236 cterm=bold guifg=#64666d guibg=#64666d gui=
 hi MatchParen ctermfg=212 ctermbg=NONE cterm=underline guifg=#ff79c6 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=236 cterm=bold guifg=#f8f8f2 guibg=#64666d gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=236 cterm=NONE guifg=#f8f8f2 guibg=#64666d gui=NONE
-hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f0f0f0 guibg=#44475a gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=236 cterm=NONE guifg=#f60000 guibg=#500000 gui=NONE
+hi Pmenu ctermfg=15 ctermbg=29 cterm=NONE guifg=#f0f0f0 guibg=#44475a gui=NONE
+hi PmenuSel ctermfg=250 ctermbg=29 cterm=NONE guifg=#f60000 guibg=#500000 gui=NONE
 " hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#282a36 guibg=#ffb86c gui=none
 hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#500000 guibg=#d60000 gui=none
 " hi Search ctermfg=17 ctermbg=84 cterm=none guifg=#282a36 guibg=#8cfd8a gui=none

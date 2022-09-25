@@ -98,8 +98,8 @@ inoremap <C-k> <ESC>"_dg_i
 
 " 補完機能の設定
 " https://note.com/yasukotelin/n/na87dc604e042
-inoremap <expr><CR> pumvisible() ? "<C-y>" : "<CR>"
 set completeopt=menuone,noinsert
+inoremap <expr><CR> pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 
