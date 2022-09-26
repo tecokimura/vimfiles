@@ -7,7 +7,6 @@
 
 call plug#begin()
 Plug 'tpope/vim-unimpaired'
-" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'simeji/winresizer'
 Plug 'lambdalisue/fern.vim'
@@ -69,6 +68,24 @@ let g:airline#extensions#default#layout = [
     \ [ 'a', 'b', 'c'],
     \ [ 'x', 'y', 'warning', 'error']
     \ ]
+
+
+
+"======
+" for CoC
+"---------
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return ! col || getline('.')[col - 1] =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<Tab>" :
+    \ coc#refresh()
+" Tab is next, S-Tab is prev
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-tab>"
 
 
 "======
