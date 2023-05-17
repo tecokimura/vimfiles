@@ -22,8 +22,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Color scheme
 Plug 'cocopon/iceberg.vim'
 Plug 'haishanh/night-owl.vim'
+
+" Syntax
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
