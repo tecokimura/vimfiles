@@ -6,6 +6,8 @@
 
 
 call plug#begin()
+Plug 'vim-jp/vimdoc-ja'
+
 Plug 'tpope/vim-unimpaired'
 Plug 'easymotion/vim-easymotion'
 Plug 'simeji/winresizer'
@@ -28,8 +30,12 @@ Plug 'haishanh/night-owl.vim'
 
 " Syntax
 Plug 'leafgarland/typescript-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
+
+
+set helplang=ja,en
 
 "======
 " for Fern
