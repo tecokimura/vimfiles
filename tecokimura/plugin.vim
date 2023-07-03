@@ -32,6 +32,9 @@ Plug 'haishanh/night-owl.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+" GitHub Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 
@@ -118,3 +121,15 @@ if executable('rg')
   " RGコマンドはFZGrep関数を呼び出す
   command! -nargs=* -bang RG call FZGrep(<q-args>, <bang>0)
 endif
+
+
+
+"======
+" for GitHub Copilot
+"---------
+let g:copilot_filetypes = {
+    \ '*': v:true,
+    \ 'TypeScript': v:true,
+    \ 'python': v:true,
+    \ 'php': v:true,
+    \ }

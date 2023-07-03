@@ -155,3 +155,6 @@ https://github.com/cocopon/iceberg.vim
 https://github.com/yuru7/Firge/releases
 (https://qiita.com/tawara_/items/374f3ca0a386fab8b305)
 
+
+## GitHub Copilot
+:Copilot setup
